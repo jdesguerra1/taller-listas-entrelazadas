@@ -1,4 +1,7 @@
+import uno_tres
+
 def menu():
+    lista = uno_tres.ListaEnlazada()
 
     while True:
         print("\n=== Menú de Lista Enlazada ===")
