@@ -93,7 +93,6 @@ class ListaEnlazada:
     def invertir(self):
         anterior = None
         actual = self.cabeza
-
         while actual is not None:
             siguiente = actual.siguiente
             actual.siguiente = anterior
