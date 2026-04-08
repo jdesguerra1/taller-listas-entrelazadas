@@ -27,8 +27,8 @@ class ListaEnlazada:
                 actual = actual.siguiente
             actual.siguiente = nuevo
 
-    # Mostrar lista 
-    def mostrar(self):
+#4.Recorrido
+def mostrar(self):
         actual = self.cabeza
 
         while actual is not None:
