@@ -101,6 +101,39 @@ class ListaEnlazada:
 
         self.cabeza = anterior
 
+    def ordenar(self):
+        if not self.cabeza or not self.cabeza.siguiente:
+            return  
+
+        cambio = True
+
+        while cambio:
+            cambio = False
+            actual = self.cabeza
+            anterior = None
+
+            while actual.siguiente:
+                siguiente = actual.siguiente
+
+                if actual.dato > siguiente.dato:
+
+                    cambio = True
+
+                    if anterior is None:
+                        self.cabeza = siguiente
+                    else:
+                        anterior.siguiente = siguiente
+                    actual.siguiente = siguiente.siguiente
+                    siguiente.siguiente = actual
+
+                    # Mover punteros
+                    anterior = siguiente
+                else:
+                    anterior = actual
+                    actual = actual.siguiente
+
+
+
 
 def ejecutar_lista():
     lista = ListaEnlazada()

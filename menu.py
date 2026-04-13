@@ -13,6 +13,7 @@ def menu():
         print("6. Eliminar por valor")
         print("7. Tamaño de la lista")
         print("8. Invertir lista")
+        print("9. Ordenar lista")
         print("0. Salir")
 
         opcion = int(input("Ingrese una opción: "))
@@ -45,6 +46,10 @@ def menu():
         elif opcion == 8:
             lista.invertir()
             print("Lista invertida")
+
+        elif opcion == 9:
+            lista.ordenar()
+            print("Lista ordenada")
 
         elif opcion == 0:
             print("Saliendo...")
