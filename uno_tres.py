@@ -111,5 +111,5 @@ def ejecutar_lista():
     lista.insertar_final(30)
 
     lista.mostrar()
-
+    
 
